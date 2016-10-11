@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>AKPA Holland - Template</title>
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet" />
-    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link rel="stylesheet" type="text/css" href="./style.css?321" />
   </head>
   <body>
     <div class="outer">
@@ -20,7 +20,7 @@
             </div>
             <ul class="main">
               <li>
-                <a href="#intro">Stroopwafels</a>
+                <a href="#product">Stroopwafels</a>
               </li>
               <li>
                 <a href="#bestelling">Bestel nu</a>
@@ -42,10 +42,10 @@
       </header>
 
       <main>
-        <section name="intro" class="intro">
+        <section id="intro" class="intro">
           <div class="inner">
             <h1>
-              <span class="sub">Delicious Dutch</span> Stroopwafels
+              <span class="hidden">Delicious Dutch Stroopwafels</span>
             </h1>
             <p>
               <img src="./images/stroopwafels-intro.png" />
@@ -57,9 +57,10 @@
             </div>
           </div>
         </section>
-        <section name="product" class="product">
+        <section id="product" class="product">
           <div class="inner">
             <div class="text offset-1 col-10">
+              <h1 class="hidden">Het product</h1>
               <p>De traditionele Nederlandse stroopwafels zijn een
                 zeer welkome traktatie voor elke toerist. Een bezoekje aan ons
                 land gaat dan ook vaak gepaard met het aanschaffen van een kleine
@@ -70,9 +71,10 @@
             </div>
           </div>
         </section>
-        <section name="bestelling" class="bestelling">
+        <section id="bestelling" class="bestelling">
           <div class="inner">
             <div class="col-6">
+              <h1 class="hidden">Bestel nu</h1>
               <p>Het blik, vormgegeven met kenmerkende Hollandse elementen, bevat
                 6 stroopwafels verpakt per 2 stuks.</p>
               <p>De blikken kunnen worden voorzien van een sleeve met bijvoorbeeld
@@ -86,12 +88,18 @@
               Mail uw bestelling naar
                 <a href="mailto:info@akpaholland.nl">info@akpaholland.nl</a>.</p>
             </div>
+            <div class="col-6">
+              <img src="./images/verpakking-los.png" />
+            </div>
           </div>
         </section>
-        <section name="over" class="over">
+        <section id="over" class="over">
           <div class="over-inner">
             <div class="inner">
-              <div class="offset-5 col-7">
+              <div class="col-5">
+                <img src="./images/akpa-kleedje.png" />
+              </div>
+              <div class="col-7">
                 <h1>Over AKPA Holland</h1>
                 <p>AKPA Holland is onstaan in 2015 en richt zich met traditionele
                   Nederlandse producten op de toeristen industrie. De lekkernijen
@@ -119,5 +127,12 @@
         </div>
       </footer>
     </div>
+
+    <script
+      src="//code.jquery.com/jquery-3.1.1.min.js"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous">
+    </script>
+    <script src="./js/default.js?321"></script>
   </body>
 </html>

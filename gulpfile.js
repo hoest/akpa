@@ -69,7 +69,7 @@ gulp.task('watch', ['default'], function() {
   gulp.watch(['./_public/css/*.css'], ['css']);
   gulp.watch(['./src/js/*.js'], ['js']);
   gulp.watch(['./src/*.html', './src/*.php'], ['html']);
-  gulp.watch(['./src/images/**/*'], ['images']);
+  gulp.watch(['./src/images/*.*'], ['images']);
 });
 
 gulp.task('default', ['stylus', 'js', 'html', 'images']);
