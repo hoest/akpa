@@ -33,11 +33,12 @@
               </p>
               <?php if(get_field('aanbieding_actief_tm') && get_field('aanbieding_afbeelding')) {
                 $afbeelding = get_field('aanbieding_afbeelding');
+                $bestel_nu = get_field('bestel_nu');
                 $date = DateTime::createFromFormat('Ymd', get_field('aanbieding_actief_tm'));
                 if(new DateTime() <= $date) { // alleen als 'aanbieding_actief_tm' nog niet is verstreken ?>
-                <div class="bestel-button">
-                  <a href="mailto:info@akpaholland.nl">
-                    <img src="<?php echo($afbeelding['url']) ?>" />
+                <div class="bestel-button" title="<?php echo($bestel_nu) ?>">
+                  <a href="mailto:info@akpaholland.nl?Subject=<?php echo(urlencode($bestel_nu)) ?>">
+                    <img src="<?php echo($afbeelding['url']) ?>" alt="<?php echo($bestel_nu) ?>" />
                   </a>
                 </div>
               <?php } } ?>
