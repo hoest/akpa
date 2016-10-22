@@ -26,9 +26,13 @@
 </ul>
 <ul class="lang">
   <li>
-    <a href="/">NL</a>
+    <a href="/" title="Nederlandse versie (Dutch)">
+      <img src="<?php bloginfo('stylesheet_directory'); ?>/images/flag-nl.png" alt="" />
+    </a>
   </li>
   <li>
-    <a href="/en/">EN</a>
+    <a href="/en/" title="English version">
+      <img src="<?php bloginfo('stylesheet_directory'); ?>/images/flag-uk.png" alt="" />
+    </a>
   </li>
 </ul>

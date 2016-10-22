@@ -107,7 +107,6 @@ body
         font-size .9rem
 
         ul
-          margin 0.5 0
           padding 0
 
           li
@@ -116,20 +115,23 @@ body
             padding 0
 
           &.main
-            width 50%
-            order 3
             display flex
             flex-flow row wrap
             justify-content flex-end
+            margin 1em 0
+            order 3
+            width 50%
+
             +below(900px)
               display none
 
           &.lang
-            width 50%
-            order 1
             display flex
             flex-flow row wrap
             justify-content flex-start
+            margin 0.5em 0
+            order 1
+            width 50%
 
         .logo
           order 2
@@ -138,6 +140,9 @@ body
           left 50%
           margin-left -(195/2)px
           z-index 2
+
+          +mobile()
+            left 70%
 
       a
         color $wit
@@ -166,9 +171,6 @@ body
             margin 2.5rem 0 0 0
             +mobile()
               background-size 80%
-
-          img
-            max-width 60%
 
           .bestel-button
             position absolute

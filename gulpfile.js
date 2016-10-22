@@ -64,12 +64,18 @@ gulp.task('images', function() {
     .pipe(gulp.dest('./_public/images/'));
 });
 
+gulp.task('pdf', function() {
+  return gulp.src(['./src/pdf/**/*'])
+    .pipe(gulp.dest('./_public/pdf/'));
+});
+
 gulp.task('watch', ['default'], function() {
   gulp.watch(['./src/css/*.styl', '!./src/css/_*.styl'], ['stylus']);
   gulp.watch(['./_public/css/*.css'], ['css']);
   gulp.watch(['./src/js/*.js'], ['js']);
   gulp.watch(['./src/*.html', './src/*.php'], ['html']);
   gulp.watch(['./src/images/*.*'], ['images']);
+  gulp.watch(['./src/pdf/*.*'], ['pdf']);
 });
 
-gulp.task('default', ['stylus', 'js', 'html', 'images']);
+gulp.task('default', ['stylus', 'js', 'html', 'images', 'pdf']);

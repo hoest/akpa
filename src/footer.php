@@ -8,6 +8,9 @@
             +31 (0)6 10 16 44 89 of +31 (0)6 57 58 23 42
             &#169; <?php echo date("Y"); ?>
           </p>
+          <p>
+            <a target="_blank" href="<?php bloginfo('stylesheet_directory'); ?>/pdf/akpa-algemene-voorwaarden.pdf">Algemene voorwaarden (NL)</a>
+          </p>
         </div>
       </footer>
     </div>
