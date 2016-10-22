@@ -19,7 +19,7 @@
         // Add the blog description for the home/front page.
         $site_description = get_bloginfo('description', 'display');
         if ($site_description && (is_home() || is_front_page())) {
-          echo " - Welkom";
+          echo " - ".$site_description;
         }
       ?>
     </title>
@@ -28,30 +28,15 @@
 
     <meta name="author" content="<?php bloginfo('name'); ?>" />
     <meta name="keywords" content="AKPA Holland, AKPA, Holland, Soest, Stroopwafels, Niels de Jong, Paul Alexander, Groothandel de Jong" />
+    <meta name="description" content="The traditional Dutch “stroopwafels” are a real treat for all tourists visiting Holland. Once having tasted these delicious authentic cookies, one can simply not leave our country without purchasing a small supply of the typical Dutch stroopwafels. Now what would be more practical than being able to take these cookies with you in your suitcase, in a package that will assure you your stroopwafels will get to their destination in one piece? AKPA Holland offers you the solution: Delicious Dutch Stroopwafels, packaged in a flat can." />
 
     <meta property="og:locale" content="nl_NL" />
     <meta property="og:image" content="<?php bloginfo('stylesheet_directory'); ?>/images/stroopwafels-intro.png" />
-    <meta property="og:url" content="<?php the_permalink(); ?>"/>
+    <meta property="og:url" content="https://www.akpaholland.nl/"/>
     <meta property="og:site_name" content="<?php bloginfo('name'); ?>" />
-
-    <?php if(is_home() || is_front_page()) { ?>
-    <meta property="og:title" content="Welkom bij <?php bloginfo('name'); ?>"/>
-    <?php } else { ?>
-    <meta property="og:title" content="<?php echo trim(wp_title('', false)); ?>"/>
-    <?php } ?>
-
-    <!-- if page is content page -->
-    <?php if (is_single()) { ?>
-    <meta property="og:description" content="<?php echo strip_tags(get_the_excerpt($post->ID)); ?>" />
-    <meta name="description" content="<?php echo strip_tags(get_the_excerpt($post->ID)); ?>" />
-    <meta property="og:type" content="article" />
-
-    <!-- if page is others -->
-    <?php } else { ?>
-    <meta property="og:description" content="<?php bloginfo('description'); ?>" />
-    <meta name="description" content="<?php bloginfo('description'); ?>" />
+    <meta property="og:title" content="Delicious Dutch Stroopwafels"/>
+    <meta property="og:description" content="The traditional Dutch “stroopwafels” are a real treat for all tourists visiting Holland. Once having tasted these delicious authentic cookies, one can simply not leave our country without purchasing a small supply of the typical Dutch stroopwafels. Now what would be more practical than being able to take these cookies with you in your suitcase, in a package that will assure you your stroopwafels will get to their destination in one piece? AKPA Holland offers you the solution: Delicious Dutch Stroopwafels, packaged in a flat can." />
     <meta property="og:type" content="website" />
-    <?php } ?>
 
     <?php wp_head(); ?>
   </head>
