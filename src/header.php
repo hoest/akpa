@@ -38,19 +38,20 @@
     <meta property="og:description" content="The traditional Dutch “stroopwafels” are a real treat for all tourists visiting Holland. Once having tasted these delicious authentic cookies, one can simply not leave our country without purchasing a small supply of the typical Dutch stroopwafels. Now what would be more practical than being able to take these cookies with you in your suitcase, in a package that will assure you your stroopwafels will get to their destination in one piece? AKPA Holland offers you the solution: Delicious Dutch Stroopwafels, packaged in a flat can." />
     <meta property="og:type" content="website" />
 
+    <!-- Google Analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-86167310-2', 'auto');
+      ga('send', 'pageview');
+    </script>
+
     <?php wp_head(); ?>
   </head>
   <body <?php body_class(); ?>>
-  <!-- Google Analytics -->
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-86167310-2', 'auto');
-    ga('send', 'pageview');
-  </script>
     <div class="outer">
       <header>
         <div class="inner">
